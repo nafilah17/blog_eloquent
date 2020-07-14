@@ -25,3 +25,7 @@ Route::get('/admin', 'AdminController@index');
 Route::get('/article', 'ArticleController@index');
 
 Route::get('/category', 'CategoriesController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
+Route::get('/user', 'UserController@index');

@@ -87,7 +87,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                       </thead>
                       <tbody>
-                     @foreach ($profil as $p)
+                     @foreach ($profiles as $p)
                         <tr>
                           <td>{{ $p->id }}</td>
                           <td>{{ $p->name }}</td>
@@ -113,7 +113,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div><!-- /.container-fluid -->
 
      
- {{ $profil->links() }}
+ {{ $profiles->links() }}
   </div>
   <!-- /.content -->
 </div>

@@ -9,6 +9,6 @@ class Article extends Model
     protected $table = "articles";
 
     public function category(){
-    	return $this->hasOne('App\Categories');
+    	return $this->hasOne('App\Categories','category_id');
     }
 }
