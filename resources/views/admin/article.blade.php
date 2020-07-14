@@ -110,18 +110,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </tr>
                       </thead>
                       <tbody>
-                     @foreach ($a_articles as $a)
+                     @foreach ($articles as $a)
                         <tr>
                           <td>{{ $a->id }}</td>
-                          <td>{{ $a->author }}</td>
-                          <td>{{ $a->a_categories->name }}</td>
+                          <td>{{ $a->author_id }}</td>
+                          <td>{{ $a->category_id }}</td>
                           <td>{{ $a->title }}</td>
                           <td>{{substr( $a->content,0,150) }}</td>
                           <td>{{ $a->created_at }}</td>
                           <td>{{ $a->updated_at }}</td>
                           <td>
-                            <a href="/a_articles/edit/{{ $a->id }}">Edit</a>
-						                <a href="/a_articles/delete/{{ $a->id }}">Delete</a>
+                            <a href="/articles/edit/{{ $a->id }}">Edit</a>
+						                <a href="/articles/delete/{{ $a->id }}">Delete</a>
                           </td>
                         </tr>
                      @endforeach

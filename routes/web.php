@@ -21,3 +21,7 @@ Route::get('/blog', 'BlogController@index');
 
 
 Route::get('/admin', 'AdminController@index');
+
+Route::get('/article', 'ArticleController@index');
+
+Route::get('/category', 'CategoriesController@index');

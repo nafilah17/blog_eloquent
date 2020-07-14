@@ -47,8 +47,7 @@
             <a href="#">Start Bootstrap</a>
           </div>
         </div>
-
-     
+   
 
         <!-- Pagination -->
         <ul class="pagination justify-content-center mb-4">
